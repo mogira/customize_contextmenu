@@ -1,0 +1,54 @@
+Windows Registry Editor Version 5.00
+
+// 共有
+	[HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\ModernSharing]
+
+// ライブラリに追加
+	[-HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers\Library Location]
+
+// 送る
+	[HKEY_CLASSES_ROOT\AllFilesystemObjects]
+		"NoSendTo"=""
+	[HKEY_CLASSES_ROOT\Directory]
+		"NoSendTo"=""
+	[HKEY_CLASSES_ROOT\Drive]
+		"NoSendTo"=""
+
+// 以前のバージョンの復元
+	[HKEY_CLASSES_ROOT\AllFilesystemObjects]
+		"NoPreviousVersions"=""
+	[HKEY_CLASSES_ROOT\Directory]
+		"NoPreviousVersions"=""
+	[HKEY_CLASSES_ROOT\Drive]
+		"NoPreviousVersions"=""
+
+// Windows Defenderでスキャンする
+	[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\EPP]
+	[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\EPP]
+
+// アクセスを許可する
+	[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\Sharing]
+	[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\Sharing]
+	[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\Sharing]
+	[-HKEY_CLASSES_ROOT\Directory\shellex\CopyHookHandlers\Sharing]
+	[-HKEY_CLASSES_ROOT\Directory\shellex\PropertySheetHandlers\Sharing]
+	[-HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers\Sharing]
+	[-HKEY_CLASSES_ROOT\Drive\shellex\PropertySheetHandlers\Sharing]
+	[-HKEY_CLASSES_ROOT\LibraryFolder\background\shellex\ContextMenuHandlers\Sharing]
+	[-HKEY_CLASSES_ROOT\UserLibraryFolder\shellex\ContextMenuHandlers\Sharing]
+
+// スタートメニューにピン留めする
+	[-HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers\PintoStartScreen]
+
+// クイックアクセスにピン留めする
+	[-HKEY_CLASSES_ROOT\Folder\shell\pintohome]
+
+// HonewViewで表示
+	[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\0HVContext]
+	[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\0HVContext]
+
+// VLCメディアプレイヤーで再生
+	[-HKEY_CLASSES_ROOT\Directory\shell\PlayWithVLC]
+
+// VLCメディアプレイヤーのプレイリストに追加
+	[-HKEY_CLASSES_ROOT\Directory\shell\AddToPlaylistVLC]
